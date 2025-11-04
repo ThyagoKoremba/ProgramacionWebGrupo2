@@ -1,0 +1,136 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #e9f0f6;
+  background-color: #080f17;
+  scroll-behavior: smooth;
+
+}
+
+/* NAVBAR */
+header {
+  background-color: #0b1f3a;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+}
+
+
+.button-primary {
+  background-color: #96bce0;
+
+}
+.logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.gap {
+  gap: 40px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00b4d8;
+}
+
+/* SECCIONES */
+.section {
+  padding: 120px 50px 80px;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.inicio {
+  margin-top: 150px;
+}
+.section:nth-child(even) {
+  background-color: #122132;
+}
+
+h1, h2 {
+  color: #96bce0;
+  margin-bottom: 20px;
+}
+
+ul {
+  text-align: left;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+ul li {
+  margin: 8px 0;
+}
+
+/* FORMULARIO DE CONTACTO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px;
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #0096c7;
+}
+
+/* FOOTER */
+footer {
+  background-color: #0b1f3a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+html {
+  scroll-padding-top: 80px; /* ajustá el valor al alto de tu navbar */
+}
