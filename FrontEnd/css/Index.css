@@ -134,3 +134,82 @@ footer {
 html {
   scroll-padding-top: 80px; /* ajustá el valor al alto de tu navbar */
 }
+
+/* === EQUIPO / CARDS === */
+#integrantes {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Sección de cada puesto */
+.equipo-section {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.titulo-puesto {
+  color: #0b1f3a;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-left: 5px solid #00b4d8;
+  padding-left: 10px;
+}
+
+/* Contenedor horizontal */
+.card-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 10px;
+  scrollbar-width: thin;
+}
+
+/* Card individual */
+.card {
+  background: white;
+  border-radius: 10px;
+  min-width: 220px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  flex: 0 0 auto;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.rol {
+  font-weight: bold;
+  color: #00b4d8;
+  margin: 5px 0;
+}
+
+.email {
+  font-size: 0.9rem;
+  color: #555;
+  word-break: break-word;
+}
+
+/* Scrollbar estilizado */
+.card-container::-webkit-scrollbar {
+  height: 8px;
+}
+.card-container::-webkit-scrollbar-thumb {
+  background-color: #00b4d8;
+  border-radius: 4px;
+}
