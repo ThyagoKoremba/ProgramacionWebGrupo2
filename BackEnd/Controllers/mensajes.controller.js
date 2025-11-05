@@ -11,7 +11,7 @@ export const crearMensaje = async (req, res) => {
       [nombre, email, asunto, mensaje]
     );
 
-    res.status(201).json({ message: "Mensaje enviado correctamente" });
+    res.status(201).json({ message: "Su mensaje fue enviado correctamente" });
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Error al guardar el mensaje" });
