@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             respuesta.style.color = "red";
             return;
         }
+// Fin  de Validacion Regex FrontEnd
 
         // Envio de Datos al BackEnd
         try {
@@ -52,4 +53,5 @@ document.addEventListener("DOMContentLoaded", () => {
             respuesta.style.color = "red";
         }
     });
-});
+})
+// Fin de Envio de Datos al BackEnd
