@@ -15,86 +15,162 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="./../img/logo.png" alt="Logo-innvatech" class="logo">
+    <header class="header">
+        <nav class="header-nav">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <img src="./../img/logo.png" alt="Logo de Innovatech">
             </div>
-            <ul class="nav-links gap">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#quienes-somos">Quiénes Somos</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#clientes">Clientes</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#equipo">Equipo</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+
+            <!-- Enlaces de navegación -->
+            <ul class="nav-list">
+                <li class="list-item"><a href="#inicio" class="list-item-link">Inicio</a></li>
+                <li class="list-item"><a href="#quienes-somos" class="list-item-link">Quiénes Somos</a></li>
+                <li class="list-item"><a href="#servicios" class="list-item-link">Servicios</a></li>
+                <li class="list-item"><a href="#clientes" class="list-item-link">Clientes</a></li>
+                <li class="list-item"><a href="#proyectos" class="list-item-link">Proyectos</a></li>
+                <li class="list-item"><a href="#equipo" class="list-item-link">Equipo</a></li>
+                <li class="list-item"><a href="#contacto" class="list-item-link">Contacto</a></li>
             </ul>
+
+            <!-- Botón de inicio de sesión -->
+            <div class="nav-login">
+                <a href="#login" class="btn-login">Iniciar sesión</a>
+            </div>
         </nav>
     </header>
 
     <main>
         <!-- INICIO -->
-        <section id="inicio" class="section inicio">
-            <h1>Bienvenido a Innovatech</h1>
-            <p>Una empresa dedicada a impulsar el futuro mediante soluciones tecnológicas inteligentes, eficientes y
-                adaptadas a las necesidades de tu negocio.</p>
+        <section id="inicio" class="main-section main-section-inicio">
+            <div class="container-inicio">
+                <h1 class="titulo-inicio">Bienvenido a Innovatech</h1>
+                <p>Una empresa dedicada a impulsar el futuro mediante soluciones tecnológicas inteligentes, eficientes y
+                    adaptadas a las necesidades de tu negocio.</p>
+            </div>
         </section>
 
         <!-- QUIÉNES SOMOS -->
-        <section id="quienes-somos" class="section">
-            <h2>Quiénes Somos</h2>
-            <p>En Innovatech creemos que la tecnología debe ser una herramienta al servicio del progreso. Somos un
-                equipo de profesionales apasionados por la innovación, la transformación digital y el desarrollo
-                sostenible.</p>
+        <section id="quienes-somos" class="main-section main-section-quienes-somos">
+            <div class="quienes-somos-card">
+                <img src="./img/logo.png" alt="Equipo de Innovatech en la oficina" class="quienes-somos-img">
+            </div>
+            <div class="text-content">
+                <h2>Quiénes Somos</h2>
+                <p>
+                    En Innovatech creemos que la tecnología debe ser una herramienta al servicio del progreso.
+                    Somos un equipo de profesionales apasionados por la innovación, la transformación digital
+                    y el desarrollo sostenible.
+                </p>
+            </div>
         </section>
 
         <!-- SERVICIOS -->
-        <section id="servicios" class="section">
-            <h2>Servicios</h2>
-            <p>Ofrecemos una amplia gama de servicios tecnológicos para acompañar a empresas en su crecimiento digital:
-            </p>
-            <ul>
-                <li>Desarrollo de software a medida</li>
-                <li>Consultoría tecnológica</li>
-                <li>Transformación digital</li>
-                <li>Inteligencia artificial y automatización</li>
-                <li>Ciberseguridad</li>
-                <li>Infraestructura en la nube</li>
-            </ul>
+        <section id="servicios" class="main-section main-section-servicios">
+            <div class="servicios-header">
+                <h2 class="servicios-title">Servicios</h2>
+                <p class="servicios-text">
+                    Ofrecemos una amplia gama de servicios tecnológicos para acompañar a empresas en su crecimiento
+                    digital:
+                </p>
+            </div>
+
+            <div class="servicios-container">
+                <div class="servicio-card">
+                    <img src="./img/desarrollo3.png" alt="Desarrollo de software a medida" class="servicio-img">
+                    <h3 class="servicio-title">Desarrollo de Software a Medida</h3>
+                    <p class="servicio-text">Creamos aplicaciones personalizadas que se adaptan a las necesidades
+                        específicas de tu negocio.</p>
+                </div>
+
+                <div class="servicio-card">
+                    <img src="./img/Consultoria2.jpg" alt="Consultoría tecnológica para empresas" class="servicio-img">
+                    <h3 class="servicio-title">Consultoría Tecnológica</h3>
+                    <p class="servicio-text">Asesoramiento estratégico para optimizar procesos, mejorar eficiencia y
+                        reducir costos mediante tecnología.</p>
+                </div>
+
+                <div class="servicio-card">
+                    <img src="./img/transformacion.jpg" alt="Transformación digital" class="servicio-img">
+                    <h3 class="servicio-title">Transformación Digital</h3>
+                    <p class="servicio-text">Te ayudamos a digitalizar tu empresa y adoptar herramientas que impulsen tu
+                        competitividad.</p>
+                </div>
+
+                <div class="servicio-card">
+                    <img src="./img/ia1.jpg" alt="Soluciones de inteligencia artificial" class="servicio-img">
+                    <h3 class="servicio-title">Inteligencia Artificial y Automatización</h3>
+                    <p class="servicio-text">Desarrollamos soluciones basadas en IA para automatizar tareas y mejorar
+                        decisiones.</p>
+                </div>
+
+                <div class="servicio-card">
+                    <img src="./img/ciberseguridad.jpg" alt="Protección de datos" class="servicio-img">
+                    <h3 class="servicio-title">Ciberseguridad</h3>
+                    <p class="servicio-text">Protegemos tus datos y sistemas ante amenazas digitales con auditorías y
+                        soluciones robustas.</p>
+                </div>
+
+                <div class="servicio-card">
+                    <img src="./img/cloud.jpg" alt="Infraestructura en la nube" class="servicio-img">
+                    <h3 class="servicio-title">Infraestructura en la Nube</h3>
+                    <p class="servicio-text">Implementamos entornos cloud seguros, escalables y de alto rendimiento.</p>
+                </div>
+            </div>
         </section>
 
 
         <!-- CLIENTES -->
-        <section id="clientes" class="section">
-            <h2>Clientes</h2>
-            <p>Empresas líderes confían en Innovatech para potenciar su desarrollo digital. Trabajamos en distintos
-                sectores como finanzas, educación, salud, logística y comercio electrónico.</p>
+        <section id="clientes" class="main-section main-section-clientes">
+            <div class="clientes-card">
+                <!-- Card de imagen -->
+                <div class="clientes-img-card">
+                    <img src="./img/clientes.jpg" alt="Clientes de Innovatech" class="clientes-img">
+                </div>
+
+                <!-- Contenido de texto -->
+                <div class="clientes-text-content">
+                    <h2 class="clientes-title">Clientes</h2>
+                    <p class="clientes-text">
+                        Empresas líderes confían en Innovatech para potenciar su desarrollo digital.
+                        Trabajamos en distintos sectores como finanzas, educación, salud, logística y comercio
+                        electrónico.
+                    </p>
+                </div>
+            </div>
         </section>
 
         <!-- PROYECTOS -->
-        <section id="proyectos" class="section">
-            <h2>Proyectos</h2>
-            <p>Conocé algunos de nuestros proyectos más destacados, donde combinamos diseño, ingeniería y estrategia
-                para ofrecer resultados que superan las expectativas.</p>
+        <section id="proyectos" class="main-section main-section-proyectos">
+            <div class="proyectos-container">
+                <h1 class="proyectos-title">Proyectos</h1>
+                <p class="proyectos-text">
+                    Conocé algunos de nuestros proyectos más destacados, donde combinamos diseño, ingeniería y
+                    estrategia para ofrecer resultados que superan las expectativas.
+                </p>
+                <a href="#" class="proyectos-btn">Conocer más</a>
+            </div>
         </section>
 
+
         <!-- EQUIPO -->
-        <section id="equipo" class="section">
+        <section id="equipo" class="main-section-equipo">
             <h2>Equipo</h2>
             <p>Detrás de cada solución hay un equipo multidisciplinario comprometido con la excelencia. Desarrolladores,
                 diseñadores, ingenieros y consultores unidos por una visión: innovar con propósito.</p>
-            <div id="integrantes"></div>
+            <div id="integrantes">
+            </div>
         </section>
 
         <!-- CONTACTO -->
-        <section id="contacto" class="section">
+        <section id="contacto" class="main-section-contacto">
             <h2>Contacto</h2>
             <p>¿Listo para transformar tu negocio con tecnología?</p>
             <form id="form-contacto">
-                <input type="text" id="nombre" placeholder="Nombre" required>
-                <input type="asunto" id="asunto" placeholder="Asunto" required>
-                <input type="email" id="email" placeholder="Correo electrónico">
-                <textarea placeholder="Mensaje" id="mensaje" required></textarea>
+                <input type="text" id="nombre" placeholder="Nombre" >
+                <input type="text" id="asunto" placeholder="Asunto" >
+                <input type="email" id="email" placeholder="Correo electrónico" >
+                <textarea id="mensaje" placeholder="Mensaje" ></textarea>
                 <button type="submit" class="button-primary">Enviar</button>
             </form>
             <p id="respuesta" class="respuesta"></p>
