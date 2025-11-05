@@ -10,8 +10,25 @@ document.addEventListener("DOMContentLoaded", () => {
         const email = document.getElementById("email").value.trim(); //que tenga formato de email
         const mensaje = document.getElementById("mensaje").value.trim(); 
 
-        //Validaciones tiene que decir que dato esta mal, con un mensaje de error para cada campo
 
+ // Validacion Regex FrontEnd
+
+        const nombreRegex = /^[a-zA-ZÀ-ÿ\s]{1,40}$/;
+        const emailRegex = /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/;
+        let errores = [];
+
+        if(!nombreRegex.test(nombre)) errores.push("El nombre solo debe contener letras y espacios.");
+        if(!asunto) errores.push("El asunto es obligatorio.");
+        if(!emailRegex.test(email)) errores.push("El correo electrónico es inválido.");
+        if(!mensaje) errores.push("El mensaje no puede estar vacío.");
+
+        if(errores.length > 0) {
+            respuesta.innerHTML = errores.join("<br>");
+            respuesta.style.color = "red";
+            return;
+        }
+
+        // Envio de Datos al BackEnd
         try {
             const res = await fetch("http://localhost:3001/api/mensajes", {
                 method: "POST",
@@ -21,12 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const data = await res.json();
 
-            if (res.ok) {
+            if(res.ok) {
                 respuesta.textContent = data.message;
                 respuesta.style.color = "green";
                 form.reset();
             } else {
-                respuesta.textContent = data.error || "Error al enviar el mensaje.";
+                respuesta.innerHTML = data.errors ? data.errors.join("<br>") : data.error || "Error al enviar el mensaje.";
                 respuesta.style.color = "red";
             }
         } catch (err) {
