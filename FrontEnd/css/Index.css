@@ -199,6 +199,10 @@ html {
   margin: 5px 0;
 }
 
+.card h4 {
+  color: #0b1f3a;
+}
+
 .email {
   font-size: 0.9rem;
   color: #555;
@@ -212,4 +216,12 @@ html {
 .card-container::-webkit-scrollbar-thumb {
   background-color: #00b4d8;
   border-radius: 4px;
+}
+
+
+.respuesta {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  
 }
